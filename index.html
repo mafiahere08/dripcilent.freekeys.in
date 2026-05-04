@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Drip Client</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top,#3b0055,#0d0014);
+    color:white;
+    text-align:center;
+}
+
+/* TITLE */
+h1{
+    font-size:36px;
+    margin-top:60px;
+    color:#d580ff;
+    letter-spacing:3px;
+    text-shadow:0 0 20px #a64dff;
+}
+
+.sub{
+    color:#aaa;
+    font-size:14px;
+}
+
+/* TELEGRAM BUTTON */
+.tg-btn{
+    margin-top:20px;
+    padding:12px 30px;
+    border:none;
+    border-radius:20px;
+    background:rgba(0,0,0,0.4);
+    color:#d580ff;
+    box-shadow:0 0 15px #a64dff;
+    cursor:pointer;
+}
+
+/* CARD */
+.card{
+    margin:30px;
+    padding:25px;
+    border-radius:25px;
+    background:rgba(20,0,30,0.9);
+    box-shadow:0 0 40px rgba(162,0,255,0.6);
+}
+
+/* SLIDER */
+input[type=range]{
+    width:100%;
+    margin-top:15px;
+}
+
+/* TEXT */
+#daysText{
+    margin-top:10px;
+    color:#ddd;
+}
+
+/* BUTTON */
+.gen-btn{
+    margin-top:20px;
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:20px;
+    font-size:16px;
+    background:linear-gradient(90deg,#7a00ff,#d580ff);
+    color:white;
+    box-shadow:0 0 25px #a64dff;
+    cursor:pointer;
+}
+
+/* RESULT */
+#result{
+    margin-top:20px;
+    color:#00ffcc;
+    font-size:14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>DRIP CLIENT</h1>
+<div class="sub">CRACKED VERSION</div>
+<div class="sub">WELCOME TO MAFIA X PANEL</div>
+
+<button class="tg-btn" onclick="joinTG()">JOIN TELEGRAM</button>
+
+<div class="card">
+
+<h2>🔑 GENERATE KEY</h2>
+
+<p id="daysText">Duration: 1 day</p>
+
+<input type="range" min="0" max="4" value="0" id="slider">
+
+<button class="gen-btn" onclick="generate()">GENERATE KEY</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+let slider = document.getElementById("slider");
+let daysText = document.getElementById("daysText");
+
+let days = [1,3,7,15,30];
+
+slider.oninput = function(){
+    let d = days[this.value];
+    daysText.innerText = "Duration: " + d + " days";
+}
+
+function joinTG(){
+    window.location.href = "https://t.me/+psULB0ldEwMxZThl";
+}
+
+function generate(){
+    document.getElementById("result").innerText =
+    "✅ Key generated successfully! Go and see in Telegram";
+
+    setTimeout(()=>{
+        window.location.href = "https://t.me/+psULB0ldEwMxZThl";
+    },2000);
+}
+</script>
+
+</body>
+</html>
